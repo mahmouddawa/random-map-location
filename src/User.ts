@@ -8,9 +8,14 @@ export class User{
       lng:parseFloat(faker.address.longitude())
     }
   }
+
   name: string;
   location: {
     lat:number;
     lng:number;
   };
+  markerContent():string{
+    return `Username: ${this.name}`
+  }
+
 }
